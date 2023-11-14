@@ -6,6 +6,7 @@ import com.microsoft.appcenter.AppCenter
 import com.microsoft.appcenter.analytics.Analytics
 import com.microsoft.appcenter.crashes.Crashes
 import kotlinx.android.synthetic.main.activity_main.calculateButton
+import kotlinx.android.synthetic.main.activity_main.resultTextView
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +18,6 @@ class MainActivity : AppCompatActivity() {
         calculateButton.setOnClickListener {
             Analytics.trackEvent("AAA")
         }
-
+        resultTextView.text ="change from feature branch"
     }
 }
